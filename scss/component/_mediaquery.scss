@@ -1,0 +1,15 @@
+@media screen and (max-width: 480px) {
+    .section-magic {
+      color: #03afff;
+    }
+  }
+  @media screen and (min-width: 481px)  {
+    .section-magic {
+      color: chartreuse;
+    }
+  }
+  @media screen and (min-width: 961px) {
+    .section-magic {
+      color: rgb(247, 10, 10);
+    }
+  } 

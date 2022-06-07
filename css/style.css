@@ -1,0 +1,198 @@
+.mi-parrafo {
+  font-family: "Roboto", sans-serif;
+}
+
+.formulario {
+  background-color: gray;
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.formulario fieldset {
+  border: none;
+}
+
+.formulario legend {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: yellow;
+}
+
+.campo {
+  margin-bottom: 1rem;
+}
+
+.campo label {
+  color: var(--blanco);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.input-text {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03afff;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  color: #1542d4;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .section-magic {
+    color: #03afff;
+  }
+}
+@media screen and (min-width: 481px) {
+  .section-magic {
+    color: chartreuse;
+  }
+}
+@media screen and (min-width: 961px) {
+  .section-magic {
+    color: #f70a0a;
+  }
+}
+h2:hover, .mi-parrafo2:hover {
+  transform: scale(1.1);
+}
+
+.iconos, .contenido-hero, p, main h1 p h2, main h1, body h2, body section div h2, .footer {
+  text-align: center;
+}
+
+body {
+  background-image: url("/src/img/hero.jpg");
+}
+body img {
+  width: 1px;
+  height: auto;
+}
+body section div h2 {
+  padding: 10px 22px;
+  margin: 30px 60px;
+  border-radius: 60px;
+  display: block;
+}
+body section div h2 p {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+}
+body main {
+  background-color: lightgoldenrodyellow;
+}
+body h2 {
+  color: #724c4c;
+  background-color: lightgreen;
+  padding: 10px 22px;
+  margin: 30px 60px;
+  border-radius: 60px;
+  display: block;
+}
+body h2 div section h3 {
+  color: darkred;
+  text-align: justify;
+}
+
+main h1 {
+  color: red;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main h1 p {
+  color: black;
+  font-size: 26px;
+}
+main h1 p h2 {
+  color: #724c4c;
+  background-color: lightgreen;
+  padding: 10px 22px;
+  margin: 30px 60px;
+  border-radius: 60px;
+  display: block;
+}
+
+.mi-parrafo {
+  background-color: lightyellow;
+}
+
+.mi-parrafo2 {
+  color: blue;
+  font-family: "Roboto", sans-serif;
+}
+h2:hover {
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.section-magic:hover {
+  animation-name: Change-Color;
+  animation-duration: 4s;
+}
+
+p {
+  font-size: 26px;
+}
+
+@keyframes Change-Color {
+  0% {
+    background-color: #0cdfdf;
+  }
+  15% {
+    background-color: darkkhaki;
+  }
+  25% {
+    background-color: rgba(255, 0, 51, 0.445);
+  }
+  50% {
+    background-color: darkblue;
+  }
+}
+h3 {
+  color: darkred;
+  text-align: justify;
+}
+
+.contenido-hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.servicios {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: 3;
+}
+
+.iconos {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

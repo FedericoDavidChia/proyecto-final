@@ -1,0 +1,138 @@
+@import 'base/tipografia';
+@import 'base/listas';
+@import 'base/formulario';
+@import 'component/grid';
+@import 'component/footer';
+@import 'component/mediaquery';
+@import 'component/extend';
+@import 'component/mixins';
+
+// nesting
+body{
+  background-image: url("/src/img/hero.jpg");
+  img {
+    width: 1px;
+    height: auto;
+  }
+  section {
+    div {
+      h2 {
+        @extend %aling;
+        @include container;
+        border-radius: 60px;
+        display: block;
+        p {
+          $color: rgb(114, 76, 76);
+          $background-color: lightgreen;
+          font-family: "Roboto", sans-serif;
+          font-size: 26px;
+        }
+      }
+    }
+  }
+  main {
+    background-color: lightgoldenrodyellow;
+  }
+  h2 {
+    color:rgb(114, 76, 76);
+    background-color: lightgreen;
+    @extend %aling;
+    @include container;
+    border-radius: 60px;
+    display: block;
+    div {
+      section {
+        h3 {
+          color: darkred;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+main {
+  h1 {
+    color: nth($colores, 1 );
+    @extend %aling;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    p {
+      color: rgb(0, 0, 0);
+      font-size: 26px;
+      h2 {
+        color: rgb(114, 76, 76);
+        background-color: lightgreen;
+        @extend %aling;
+        @include container;
+        border-radius: 60px;
+        display: block;
+      }
+    }
+  }
+}
+
+.mi-parrafo{
+  background-color:nth($colores, 4);
+}
+// /tranformacion
+.mi-parrafo2{
+  color: nth($colores, 2 );
+  font-family: "Roboto", sans-serif;
+    &:hover{
+        @extend %transform;
+    }
+  
+  } 
+//   transicionnes
+  h2{
+    &:hover{
+        @extend %transform;
+        transition-property: all;
+        transition-duration: 1s;
+      }
+  }
+  
+//   animaciones
+  .section-magic{
+      &:hover{
+        animation-name: Change-Color ;
+        animation-duration: 4s ;
+      } 
+    }
+    p{
+      @extend %aling;
+      font-size: 26px;
+    }
+    @keyframes Change-Color{
+      0%{
+        background-color: rgb(12, 223, 223);
+      }
+      15%{ 
+        background-color: darkkhaki;
+      }
+      25%{
+        background-color: rgba(255, 0, 51, 0.445);
+      }
+      50%{
+      background-color: darkblue;
+      }
+    }
+    h3{
+      color: darkred;
+      text-align: justify;
+  }
+  .contenido-hero {
+      display: flex;
+      flex-direction: column;
+      @extend %aling;
+  }
+  .servicios {
+      display: flex;
+      justify-content: space-around;
+      flex-flow: 3;
+  }
+  .iconos {
+      display: flex;
+      justify-content: center;
+      @extend %aling;
+  }
